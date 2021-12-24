@@ -1,4 +1,6 @@
 import React from 'react'
+import Btn from '../common/Btn'
+import Input from '../common/Input'
 
 export default function Newletter() {
     return (
@@ -10,10 +12,10 @@ export default function Newletter() {
                 </div>
                 <div className="footer-form newsletter-form field field-grouped">
                     <div className="control control-expanded">
-                        <input className="input" type="email" name="email" placeholder="Your best email…" />
+                        <Input/>
                     </div>
                     <div className="control">
-                        <a className="button button-primary button-block button-shadow" href="#">Early access</a>
+                        <Btn content="Early access"/>
                     </div>
                 </div>
             </div>

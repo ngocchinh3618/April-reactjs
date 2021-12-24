@@ -6,7 +6,7 @@ export default function UserCard(props) {
             <div className="testimonial-inner">
                 <div className="testimonial-main">
                     <div className="testimonial-header">
-                        <img className="mb-16" src="dist/images/testimonial-01.png" alt="Testimonial" />
+                        <img className="mb-16" src={props.url} alt="Testimonial" />
                     </div>
                     <div className="testimonial-body">
                         <p className="mb-0">{props.content}</p>

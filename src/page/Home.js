@@ -5,10 +5,12 @@ import Main from '../components/Main';
 
 export default function Home() {
     return (
-        <div>
-            <Header></Header>
-            <Main/>
-            <Footer/>
-        </div>
+        <>
+            <Header/>
+            <Main />
+            <Footer />
+        </>
+
+
     )
 }

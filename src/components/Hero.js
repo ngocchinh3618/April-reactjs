@@ -1,4 +1,6 @@
 import React from 'react'
+import Btn from '../common/Btn'
+import Input from '../common/Input'
 
 export default function Hero() {
     return (
@@ -9,10 +11,10 @@ export default function Hero() {
                     <p className="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
                     <div className="hero-form field field-grouped">
                         <div className="control control-expanded">
-                            <input className="input" type="email" name="email" placeholder="Your best email…" />
+                            <Input/>
                         </div>
                         <div className="control">
-                            <a className="button button-primary button-block" href="#">Early access</a>
+                        <Btn content="Early access"/>
                         </div>
                     </div>
                 </div>

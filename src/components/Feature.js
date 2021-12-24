@@ -2,13 +2,12 @@ import React from 'react'
 import { useContext } from 'react';
 import { CardContext } from '../context/context';
 import Card from "./Card";
-import leaf from "../leaf.svg";
-
+// import leaf from "../leaf.svg";
 export default function Feature() {
     const { datas } = useContext(CardContext)
 
     const allCard = datas.map(data => (
-        <Card icon={leaf} key={data.id} {...data} />
+        <Card icon={data.icon} key={data.id} {...data} />
     ))
     return (
         <div className="container">
