@@ -1,8 +1,14 @@
 import React from 'react'
-import Btn from '../common/Btn'
-import Input from '../common/Input'
+import Btn from '../../common/Btn'
+import Input from '../../common/Input'
 
 export default function Newletter() {
+    const inputChange = text => {
+        console.log(text)
+    };
+    const click = e => {
+        alert(e)
+    }
     return (
         <div className="container-sm">
             <div className="newsletter-inner section-inner">
@@ -12,13 +18,13 @@ export default function Newletter() {
                 </div>
                 <div className="footer-form newsletter-form field field-grouped">
                     <div className="control control-expanded">
-                        <Input/>
+                        <Input inputChange={inputChange}/>
                     </div>
                     <div className="control">
-                        <Btn content="Early access"/>
+                        <Btn content="Early access" click={click}/>
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
     )
 }

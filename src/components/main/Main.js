@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Newletter from './Newletter';
 import Testimonial from './Testimonial';
 import Feature from './Feature';
-import Hero from './Hero';
+import Hero from '../header/Hero';
+import anime from 'animejs';
 
 export default function Main() {
+
   useEffect(() => {
     (function () {
       const doc = document.documentElement

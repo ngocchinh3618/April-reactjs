@@ -1,13 +1,13 @@
 import React from 'react';
-import Home from './page/Home';
-import "./assets/scss/style.scss"
-
+import "./assets/scss/style.scss";
+import Directions from './router/Directions';
 export default function App() {
   return (
-
+    <>
       <div className="body-wrap boxed-container">
-        <Home />
+        <Directions />
       </div>
+    </>
 
   )
 }

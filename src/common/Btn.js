@@ -1,9 +1,12 @@
 import React from 'react'
 
 export default function Btn(props) {
-    return (
+    const click = () => {
+        props.click("Hi")
+      }
+    return (    
         <>
-        <a className="button button-primary button-block button-shadow" href="#">{props.content}</a>
+            <div className="button button-primary button-block button-shadow" onClick={click} >{props.content}</div>
         </>
     )
 }

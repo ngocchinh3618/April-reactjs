@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function UserCard(props) {
     return (
@@ -14,7 +15,7 @@ export default function UserCard(props) {
                 </div>
                 <div className="testimonial-footer">
                     <div className="testimonial-link">
-                        <a href="#">{props.title}</a>
+                        <Link to="/">{props.title}</Link>
                     </div>
                 </div>
             </div>

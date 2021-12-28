@@ -1,12 +1,9 @@
 import React from 'react'
-import { useContext } from 'react';
-import { CardContext } from '../context/context';
-import Card from "./Card";
+import Card from "../common/Card";
+import {CARD_DATA} from '../../data/index';
 // import leaf from "../leaf.svg";
 export default function Feature() {
-    const { datas } = useContext(CardContext)
-
-    const allCard = datas.map(data => (
+const allCard = CARD_DATA.map(data => (
         <Card icon={data.icon} key={data.id} {...data} />
     ))
     return (
